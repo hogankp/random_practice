@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<head>
+<TITLE>*** ILL ILL ILL ***</TITLE>
+
+<!--
+
+This is where your stylesheet declaration is. You can change the name of your style sheet but DO NOT change the titles of the regular and alternate stylesheets because they need to be the same to make the style swticher work.
+
+-->
+<link rel="stylesheet"  type="text/css" href="style.css"  title="default" />
+<link rel="alternate stylesheet" type="text/css" href="styleprint.css" title="print" />
+
+<!-- 
+
+This line calls the style swticher, don't mess with it. To read more about the style switcher, check here
+
+http://www.alistapart.com/articles/alternate/
+
+and here
+
+http://idontsmoke.co.uk/2002/ss/
+
+-->
+
+<script type="text/javascript" src="switcheroo.js"></script>
+</head>
+<BODY>
+<!--
+The stylesheet for this presentation is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.0/ 
+-->
+
+<br /><br />
+
+<!--
+
+This center kludge is ugly but works - the first slide is different, all other slides but the credit slide are the same.
+
+-->
+
+<DIV class="main">
+<div class="center">
+<div class="padding">
+<br /><br />
+<H1>Borrow</h1>
+<h3>Lend Title</h3>
+<br /><br />
+ILL Department<br />
+<span class="next"><i>www.augsburg.edu/illdept</i></span>
+<br />
+<br />
+<span class="next">2014</span>
+<br />
+<br />
+<br />
+<div class="next">[<A href="#two">next</A>]</div></div></div></div>
+
+<!--
+
+This is the code for a default slide. It has a few parts, the "name", the h3 header, the padding and the "next" part. Notice that the name is the link from the previous slide to the current slide. The next part contains a link from the current slide to the next one. You will have to change these in theis sample slide to fit into your slideshow.
+
+<A name="***"></A>
+<br /><br />
+<DIV class=main >
+<H3 class="header">Slide Title</h3>
+<div class="padding">
+
+text goes here.
+
+<div class="next">[<A href="#***">next</A>]</div></div></div> 
+
+-->
+
+<A name="Borrowing"></A>
+<br /><br />
+<DIV class=main >
+<H3 class="header">The want stuff</h3>
+<div class="padding">
+
+Don't own it. <br>
+We get it</br>
+
+<div class="next">[<A href="#three">next</A>]</div></div></div> 
+
+
+<!--
+
+are you getting the hang of how the slides fit together?
+
+-->
+
+
+<A name="Lending"></A>
+<br /><br />
+<DIV class=main >
+<H3 class="header">They Want It</h3>
+<div class="padding">
+<img src="sampleimage.gif" height="252" width="252" align="right" alt="[hand and string game]">
+We have it. We sent it. <span class="no">This is where you can put words that are more ad-libby or are reminders to yourself to mention certain things, but that don't need to be on slides for your entire audience to see. They WILL be printed by anyone, however, so don't use it for secreat stuff.</span>
+
+<!--
+
+if your image is bigger than your slide, you have to insert an extra break as shown below
+
+-->
+
+<br clear="all">
+<div class="next">[<A href="#credits">next</A>]</div></div></div> 
+
+
+
+<!--
+
+the last slide before the credits needs to have a link to the name credits, as you can see below.
+
+-->
+
+<A name="credits"></A>
+<br /><br />
+<DIV class=main>
+<H3 class="header">&#171;&nbsp; credits&nbsp;&#187;</H3>
+<div class="padding">
+
+It's all about sharing.
+<br /><br />
+
+<!--
+please keep this disclaimer here unless you have another way to credit the stylesheet & me
+-->
+
+<span class="next">This presentation was created in HTML using CSS. There was no PowerPoint involved in this presentation except as a nagging bad example. The layout and stylesheet are available to borrow via a share and share alike creative commons license. See source code for details.</span>
+<br />
+
+<!--
+this does the style switcher magic. Be aware if you make this link public, anyone can click it to see a prinatable version of your slides AND any notes you made hidden using the .no span
+-->
+
+<small><a href="#" onclick="setActiveStyleSheet('default'); return false;">slides version</a> | <a href="#" onclick="setActiveStyleSheet('print'); return false;">printable version</a></small>
+</div></DIV>
+<P>
+<DIV>
+</DIV>
+</BODY>
+</HTML>
